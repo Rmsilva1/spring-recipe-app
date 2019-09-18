@@ -1,9 +1,11 @@
 package guru.springframework.services;
 
-import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-@Service
+/**
+ * Created by jt on 7/3/17.
+ */
 public interface ImageService {
-    void saveImageFile(Long valueOf, MultipartFile file);
+
+    void saveImageFile(Long recipeId, MultipartFile file);
 }
